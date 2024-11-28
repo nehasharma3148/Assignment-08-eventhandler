@@ -1,0 +1,18 @@
+<!--Change the background color of a <div> to blue when the mouse hovers over it-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="colorDiv" style="width:100px; height:100px; background:red;"></div>
+    <script>
+        function changeToBlue(){
+            document.getElementById("colorDiv").style.backgroundColor="blue";
+        }
+        document.getElementById("colorDiv").addEventListener("mouseover",changeToBlue);
+    </script>
+</body>
+</html>

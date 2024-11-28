@@ -1,0 +1,18 @@
+<!--Change the text of a paragraph when it is double-clicked-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myParagraph">Double-Click me to change my text</p>
+    <script>
+        function changeText(){
+            document.getElementById("myParagraph").textContent="Text has been changed!";
+        }
+        document.getElementById("myParagraph").addEventListener("dblclick",changeText);
+    </script>
+</body>
+</html>

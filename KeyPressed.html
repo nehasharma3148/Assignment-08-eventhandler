@@ -1,0 +1,18 @@
+<!-- Log the pressed key to the console when a key is pressed.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" placeholder="Type something....">
+    <script>
+        function logKey(event){
+            document.write("Key Pressed:",event.key);
+        }
+        document.addEventListener('keydown',logKey);
+    </script>
+ </body>
+ </html>

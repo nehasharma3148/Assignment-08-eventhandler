@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Event Handling Example </h1>
+    <button id="myButton">Click Me</button>
+    <script>
+        function handleClick(){
+            alert("Button was clicked!");
+        }
+        document.addEventListener("DOMContentLoaded",function(){
+            const button = document.getElementById("myButton");
+            button.addEventListener("click",handleClick);
+        });
+    </script>
+    <!--Attach a click event to a button using a function that displays an alert-->
+    <script>
+        function showAlert(){
+            alert("Button Clicked!");
+        }
+        document.getElementById("myButton").addEventListener("click",showAlert);
+    </script>
+</body>
+</html>
